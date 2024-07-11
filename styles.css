@@ -48,11 +48,11 @@ header {
 }
 
 .header-actions .btn {
-    background-color: #333;
+    background-color: #89D3D2;
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 0.35rem 1rem;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 17px;
 }
 
 .intro {
@@ -160,3 +160,112 @@ footer {
         width: 80%;
     }
 }
+
+
+
+footer {
+    background-color: #f9e9e1;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  .newsletter {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    text-align: center;
+  }
+  
+  .newsletter form {
+    display: flex;
+    margin-top: 1rem;
+  }
+  
+  .newsletter input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  
+  .newsletter button {
+    background-color: #c9a795;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #d3c0b6;
+    margin: 2rem 0;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    flex-basis: 18%;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-column h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-column a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 2rem; */
+    margin:1rem;
+  }
+  
+  .footer-bottom img {
+    height: 150px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-links {
+      flex-direction: column;
+    }
+    
+    .footer-column {
+      flex-basis: 100%;
+    }
+    
+    .newsletter form {
+      flex-direction: column;
+    }
+    
+    .newsletter input,
+    .newsletter button {
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+    
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .footer-bottom img {
+      margin-bottom: 1rem;
+    }
+  }
