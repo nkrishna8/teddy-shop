@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, main, footer {
+    padding: 1rem;
+}
+
+header {
+    background-color: #f8f8f8;
+}
+
+.header-top {
+    background-color: #ffebcd;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.header-logo{
+    display: flex;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #333;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.header-actions .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.intro {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* background-color: #f0f0f0; Light gray background, adjust as needed */
+}
+
+.contact-info p {
+    margin: 0;
+    padding: 5px;
+    flex: 1; /* Allow paragraphs to grow and shrink equally */
+    font-size: 13px;
+}
+
+.contact-info .left {
+    text-align: left;
+}
+
+.contact-info .center {
+    text-align: center;
+}
+
+.contact-info .right {
+    text-align: right;
+}
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.spring-collection{
+    background-color: #F7F2EC;
+    ;
+
+}
+.spring-collection h2{
+    text-align:center;
+}
+.spring-collection p{
+    text-align:center;
+    font-size: 11px;
+}
+
+.category {
+    text-align: center;
+    margin: 1rem;
+}
+.product {
+    text-align: center;
+    margin: 1rem;
+    border-color: 'black';
+    border: 1px solid black;
+    padding: 2px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4)
+}
+
+.product p{
+    font-size: 11px;
+}
+
+.category img, .product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-main {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .categories, .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category, .product {
+        width: 80%;
+    }
+}
